@@ -1,4 +1,18 @@
+Task:
+---------------------------------------------------------------
+1) To acheive 99.4% validation accuracy in MNIST Dataset.
+2) To use less than 20k Parameters
+3) To converge in less than 20 Epochs
+4) Without the use of fully connected layer
+
+Results:
 ----------------------------------------------------------------
+1)Accuracy Acheived : 99.55%
+2)Parameters Used: 19,122
+3)epochs Used: 20
+
+================================================================
+
         Layer (type)               Output Shape         Param #
 
             Conv2d-1           [-1, 16, 28, 28]             160
