@@ -14,6 +14,10 @@ Parameters Used: 19,122
 
 epochs Used: 20
 
+Collab Link:
+----
+https://colab.research.google.com/github/abksyed/EVA4/blob/master/S4/EVA4B2_S4_Assignment.ipynb
+
 
 ================================================================
 
