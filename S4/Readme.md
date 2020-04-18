@@ -26,14 +26,16 @@ Total params: 19,122
 Trainable params: 19,122
 Non-trainable params: 0
 
-x-x-x-x-x-x-x-x-x-x-x-x-x--x-x-x-x-x-x-x-x
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+
 
 Input size (MB): 0.00
 Forward/backward pass size (MB): 1.17
 Params size (MB): 0.07
 Estimated Total Size (MB): 1.24
 
-x-x-x-x-x-x-x-x-x-x-x-x-x--x-x-x-x-x-x-x-x
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+
 
 
 epoch:1
