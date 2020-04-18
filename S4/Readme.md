@@ -7,9 +7,13 @@ Task:
 
 Results:
 ----------------------------------------------------------------
-1)Accuracy Acheived : 99.55%
-2)Parameters Used: 19,122
-3)epochs Used: 20
+
+Accuracy Acheived : 99.55%
+--
+Parameters Used: 19,122
+--
+epochs Used: 20
+--
 
 ================================================================
 
@@ -40,7 +44,7 @@ Total params: 19,122
 Trainable params: 19,122
 Non-trainable params: 0
 
-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+================================================================
 
 
 Input size (MB): 0.00
@@ -48,9 +52,10 @@ Forward/backward pass size (MB): 1.17
 Params size (MB): 0.07
 Estimated Total Size (MB): 1.24
 
-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+================================================================
 
-
+Log
+------
 
 epoch:1
 loss=0.08413107693195343 batch_id=937: 100%|██████████| 938/938 [00:15<00:00, 61.17it/s]
@@ -134,3 +139,4 @@ Test set: Average loss: 0.0168, Accuracy: 9952/10000 (99.52%)
 
 
 Best Accuracy in 20 epochs = 99.55% (@epoch:17)
+---
