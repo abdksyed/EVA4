@@ -21,17 +21,18 @@ def stat():
   print(' - std:', torch.std(exp))
 
 #Transforming Data (Normalizing to mean=1, std= 0)
-train_transform = transforms.Compose([
-                                      transforms.RandomRotation((-12.0,12.0), fill=(1,)),
-                                      transforms.ToTensor(),
-                                      transforms.Normalize((0.1311,), (0.3081,))
-]
-)
+def transform():
+  train_transform = transforms.Compose([
+                                        transforms.RandomRotation((-12.0,12.0), fill=(1,)),
+                                        transforms.ToTensor(),
+                                        transforms.Normalize((0.1311,), (0.3081,))
+  ]
+  )
 
-test_transform = transforms.Compose([
-                                     transforms.ToTensor(),
-                                     transforms.Normalize((0.1311,),(0.3081,))
-])
+  test_transform = transforms.Compose([
+                                       transforms.ToTensor(),
+                                       transforms.Normalize((0.1311,),(0.3081,))
+  ])
 
 #Getting Train and Test Data
 def split():
