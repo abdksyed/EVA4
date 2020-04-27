@@ -161,8 +161,8 @@
 **Results**
 
 - Parameters Used= 8464
-- Train Accuracy = 99.55%
-- Test Accuracy = 98.83%
+- Train Accuracy = 98.83%
+- Test Accuracy = 99.55%
 
 **Analysis**
 
