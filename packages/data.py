@@ -27,12 +27,19 @@ def stat():
 
 
 def transform(mean, std, rot):
-    train_transform = transforms.Compose([
-        transforms.RandomRotation((-rot, rot), fill=(1,)),
-        transforms.ToTensor(),
-        transforms.Normalize((mean,), (std,))
-    ]
-    )
+    if rot != 0.0:
+        train_transform = transforms.Compose([
+            transforms.RandomRotation((-rot, rot), fill=(1,)),
+            transforms.ToTensor(),
+            transforms.Normalize((mean,), (std,))
+        ]
+        )
+    elif rot == 0.0:
+        train_transform = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Normalize((mean,), (std,))
+        ]
+        )
 
     test_transform = transforms.Compose([
                                         transforms.ToTensor(),
@@ -44,7 +51,7 @@ def transform(mean, std, rot):
 # Getting Train and Test Data
 
 
-def split(mean, std, rot):
+def split(mean=0.1311, std=0.3081, rot=0.0):
     train_transform, test_transform = transform(mean, std, rot)
     train = datasets.MNIST('./data', train=True, transform=train_transform)
     test = datasets.MNIST('./data', train=False, transform=test_transform)
@@ -52,7 +59,7 @@ def split(mean, std, rot):
     return train, test
 
 
-def load(mean=0.1311, std=0.3081, rot=12.0):
+def load(mean=0.1311, std=0.3081, rot=0.0):
     seed = 1
 
     train, test = split(mean, std, rot)

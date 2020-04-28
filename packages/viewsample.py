@@ -5,47 +5,16 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
+import data
 
-# Transforming Data (Normalizing to mean=1, std= 0)
-train_transform = transforms.Compose([
-    transforms.ToTensor(),
-    transforms.Normalize((0.1311,), (0.3081,))
-]
-)
-
-test_transform = transforms.Compose([
-    transforms.ToTensor(),
-    transforms.Normalize((0.1311,), (0.3081,))
-])
-# Getting Train and Test Data
-train = datasets.MNIST('./data', train=True, transform=train_transform)
-test = datasets.MNIST('./data', train=False, transform=test_transform)
-
-seed = 1
-
-# CUDA Availability
-cuda = torch.cuda.is_available()
-print("CUDA Available?", cuda)
-
-# For Reproducibility
-torch.manual_seed(seed)
-
-if cuda:
-    torch.cuda.manual_seed(seed)
-
-dataloader_args = dict(shuffle=True, batch_size=64, num_workers=4,
-                       pin_memory=True) if cuda else dict(shuffle=True, batch_size=64)
-
-# Train Dataloader
-train_loader = torch.utils.data.DataLoader(train, **dataloader_args)
-
-# Test Dataloader
-test_loader = torch.utils.data.DataLoader(test, **dataloader_args)
-
-# Testing Normalized Data Statistics
+train, test = data.split()
+train_loader, test_loader = data.load()
 
 
-def single():
+def single(mean=0.1311, std=0.3081):
+
+    # Testing Normalized Data Statistics
+
     train_numpy = train.train_data
     train_numpy = train.transform(train_numpy.numpy())
 
