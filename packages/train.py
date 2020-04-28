@@ -57,7 +57,7 @@ def train_wl1(model, device, train_loader, optimizer, epoch):
         reg_loss = 0
         for param in model.parameters():
             reg_loss += l1_crit(param)
-        lam = 0.0005
+        lam = 0.0005    
         loss += lam * reg_loss
 
         train_loss.append(loss)
