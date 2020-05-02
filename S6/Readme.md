@@ -31,7 +31,7 @@ _For L1:_
 
 Values checked for : 1e-5, 5e-5, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05
 
-![L1Lambda.png](https://github.com/abksyed/EVA4/blob/master/S6/L1Lambda.PNG)
+![L1Lambda.png](https://github.com/abksyed/EVA4/blob/master/S6/Images/L1Lambda.PNG)
 
 The value of 1e-5, gave the best validation accuracy.
 
@@ -39,7 +39,7 @@ _For L2:_
 
 Values checked for : 1e-5, 5e-5, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05
 
-![L2Lambda.png](https://github.com/abksyed/EVA4/blob/master/S6/L2Lambda.PNG)
+![L2Lambda.png](https://github.com/abksyed/EVA4/blob/master/S6/Images/L2Lambda.PNG)
 
 Here too the Lambda value of 1e-5 gave the best validation accuracy.
 
