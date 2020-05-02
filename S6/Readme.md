@@ -10,7 +10,7 @@
 
 Colab file:[https://colab.research.google.com/github/abksyed/EVA4/blob/master/S6/EVA4S6.ipynb](https://colab.research.google.com/github/abksyed/EVA4/blob/master/S6/EVA4S6.ipynb)
 
-To run the model, need to upload all the necessary packagesto the colab directory. The packages can be found in the S6 folder of EVA4 repo.
+To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S6 folder of EVA4 repo.
 
 **OBJECTIVE:**
 
