@@ -31,7 +31,7 @@ _For L1:_
 
 Values checked for : 1e-5, 5e-5, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05
 
-![](RackMultipart20200502-4-mbb920_html_448a0d488acf249.png)
+![L1Lambda.png](https://github.com/abksyed/EVA4/blob/master/S6/L1Lambda.PNG)
 
 The value of 1e-5, gave the best validation accuracy.
 
