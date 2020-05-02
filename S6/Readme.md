@@ -52,7 +52,12 @@ Hence, in the model we used the lambda value of 1e-5 (0.000001) for both L1 and 
 ![ValidationLoss.png](https://github.com/abksyed/EVA4/blob/master/S6/Images/ValidationLoss.png)
 
 **Misclassified Images for With L1/L2 with BN:**
+
 ![NoL1_NoL2_BN_misclass.png](https://github.com/abksyed/EVA4/blob/master/S6/Images/NoL1_NoL2_BN_misclass.png)
 
+
+
+
 **Misclassified Images for With L1/L2 with GBN:**
+
 ![NoL1_NoL2_GBN_misclass.png](https://github.com/abksyed/EVA4/blob/master/S6/Images/NoL1_NoL2_GBN_misclass.png)
