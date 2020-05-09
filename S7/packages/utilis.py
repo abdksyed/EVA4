@@ -7,6 +7,8 @@ import test, train
 classes = ('plane', 'car', 'bird', 'cat',
             'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 
+class_correct = list(0. for i in range(10))
+class_total = list(0. for i in range(10))
 
 def test_mis(model, device, test_loader):
     model.eval()
@@ -80,3 +82,21 @@ def testvtrain():
     plt.plot(test.test_acc)
     plt.title('Test vs Train Accuracy')
     plt.legend(['Train', 'Test'])
+
+def class_acc(model,device, test_loader):
+    
+    with torch.no_grad():
+        for data, target in test_loader:
+            images, labels = data.to(device), target.to(device)
+            outputs = saved_model(images)
+            _, predicted = torch.max(outputs, 1)
+            c = (predicted == labels).squeeze()
+            for i in range(labels.shape[0]):
+                label = labels[i]
+                class_correct[label] += c[i].item()
+                class_total[label] += 1
+
+
+    for i in range(10):
+        print('Accuracy of %5s : %2d %%' % (
+            classes[i], 100 * class_correct[i] / class_total[i]))
