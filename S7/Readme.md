@@ -49,7 +49,7 @@ Train and Test Accuracies and Loss:
 
 Train vs Test Accuracy:
 
-![Test-vs-Train Accuracy.png]([https://github.com/abksyed/EVA4/blob/master/S7/Images/Test-vs-Train%20Accuracy.png](https://github.com/abksyed/EVA4/blob/master/S7/Images/Test-vs-Train%20Accuracy.png))
+![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/S7/Images/Test-vs-Train%20Accuracy.png)
 
 Class Wise Accuracies:
 
