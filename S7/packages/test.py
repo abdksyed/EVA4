@@ -32,5 +32,5 @@ def test(model, device, test_loader):
 
     if test_acc[-1] > max[0]:
         max[0] = test_acc[-1]
-        path = 'savedmodel/classifier.pt'
+        path = '/classifier.pt'
         torch.save(model.state_dict(), path)

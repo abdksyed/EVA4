@@ -61,8 +61,8 @@ def mis(model, device, test_loader, nimage = 64):
         plt.xticks([])
         plt.yticks([])
         plt.imshow(x[index].squeeze(), cmap='gray_r')
-        plt.title(f'Prdicted: {classes[plab[index,0]]}')
-        plt.xlabel(f'Ground Turth: {classes[tlab[index,0]]}')
+        plt.title(f'Predicted: {classes[plab[index,0]]}')
+        plt.xlabel(f'Ground Truth: {classes[tlab[index,0]]}')
         plt.tight_layout()
 
 def graph():
@@ -84,11 +84,11 @@ def testvtrain():
     plt.legend(['Train', 'Test'])
 
 def class_acc(model,device, test_loader):
-    
+
     with torch.no_grad():
         for data, target in test_loader:
             images, labels = data.to(device), target.to(device)
-            outputs = saved_model(images)
+            outputs = model(images)
             _, predicted = torch.max(outputs, 1)
             c = (predicted == labels).squeeze()
             for i in range(labels.shape[0]):
