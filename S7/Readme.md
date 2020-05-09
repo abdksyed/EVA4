@@ -8,7 +8,7 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-Colab file:[https://colab.research.google.com/drive/1GOzQzdFFGgejLamHnWxlHmKdGh26-ZnF#scrollTo=ur2bt7oBauPc)
+Colab file:(https://colab.research.google.com/drive/1GOzQzdFFGgejLamHnWxlHmKdGh26-ZnF?usp=sharing)
 
 To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S7 folder of EVA4 repo.
 
