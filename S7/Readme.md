@@ -46,7 +46,7 @@ Misclassified Images:
 
 Train and Test Accuracies and Loss:
 
-![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/S7/Images/Test-vs-Train%20Accuracy.png)
+![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/S7/Images/Test-Train%20Accuracy%20and%20Loss.png)
 
 Train vs Test Accuracy:
 
