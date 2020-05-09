@@ -1,4 +1,5 @@
 **Members:**
+
 [Jahnavi Ramagiri](https://canvas.instructure.com/courses/1804302/users/25685093)
 
 [Sachin Sharma](https://canvas.instructure.com/courses/1804302/users/23724529)
@@ -41,7 +42,7 @@ Achieved accuracy of
 
 Misclassified Images:
 
-![MissClassifiedImages.png](hhttps://github.com/abksyed/EVA4/blob/master/S7/Images/MissClassifiedImages.png)
+![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/S7/Images/MissClassifiedImages.png)
 
 Train and Test Accuracies and Loss:
 
