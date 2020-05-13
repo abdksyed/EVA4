@@ -1,4 +1,5 @@
 import torch
+import torch.nn as nn
 import torch.nn.functional as F
 from tqdm import tqdm
 
@@ -6,6 +7,7 @@ train_loss = []
 
 train_acc = []
 train_endacc = []
+criterion = nn.CrossEntropyLoss()
 
 def train(model, device, train_loader, optimizer, epoch):
     model.train()
@@ -19,7 +21,7 @@ def train(model, device, train_loader, optimizer, epoch):
 
         y_pred = model(data)
 
-        loss = F.nll_loss(y_pred, target)
+        loss = criterion(y_pred, target)
 
         train_loss.append(loss)
 

@@ -13,6 +13,11 @@ torch.manual_seed(1)
 if cuda:
     torch.cuda.manual_seed(1)
 
+transform_train = transforms.Compose(
+    [transforms.ToTensor(),
+    transforms.RandomCrop(32, padding=4),
+    transforms.RandomHorizontalFlip(),
+     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 transform = transforms.Compose(
     [transforms.ToTensor(),
      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
@@ -25,7 +30,7 @@ def loader(batch_size= 64):
                             pin_memory=True) if cuda else dict(shuffle=True, batch_size=32)
 
     train = torchvision.datasets.CIFAR10(root='./data', train=True,
-                                            download=True, transform=transform)
+                                            download=True, transform=transform_train)
     train_loader = torch.utils.data.DataLoader(train, **dataloader_args)
 
     test = torchvision.datasets.CIFAR10(root='./data', train=False,

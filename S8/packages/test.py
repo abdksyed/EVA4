@@ -1,9 +1,11 @@
 import torch
+import torch.nn as nn
 import torch.nn.functional as F
 
 test_loss = []
 
 test_acc = []
+criterion = nn.CrossEntropyLoss()
 
 max = [0]
 
@@ -18,7 +20,7 @@ def test(model, device, test_loader):
 
             output = model(data)
 
-            tloss += F.nll_loss(output, target, reduction='sum').item()
+            tloss += criterion(output, target).item()
             pred = output.argmax(dim=1, keepdim=True)
             correct += pred.eq(target.view_as(pred)).sum().item()
 
@@ -32,5 +34,5 @@ def test(model, device, test_loader):
 
     if test_acc[-1] > max[0]:
         max[0] = test_acc[-1]
-        path = '/classifier.pt'
+        path = '/content/classifier.pt'
         torch.save(model.state_dict(), path)

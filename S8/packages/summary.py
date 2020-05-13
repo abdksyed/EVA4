@@ -1,5 +1,5 @@
 import torch
-import ResNet18 as m
+import resnet as m
 from torchsummary import summary
 
 def summ(device):
