@@ -10,7 +10,7 @@
 
 Colab file:(https://colab.research.google.com/drive/17Gxfnr4UxEpRPvtS4WZJCVLk4njc3_Hm?usp=sharing)
 
-To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S7 folder of EVA4 repo.
+To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S8/packages folder of EVA4 repo.
 
 
 ### **Objective**
