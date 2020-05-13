@@ -48,15 +48,25 @@ Train vs Test Accuracy:
 
 ![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/S8/Images/TestvTrainAcc.png)
 
+
 Class Wise Accuracies:
 
 Accuracy of plane : 91 %
-Accuracy of   car : 93 %
-Accuracy of  bird : 91 %
-Accuracy of   cat : 83 %
-Accuracy of  deer : 94 %
-Accuracy of   dog : 83 %
-Accuracy of  frog : 94 %
+
+Accuracy of car : 93 %
+
+Accuracy of bird : 91 %
+
+Accuracy of cat : 83 %
+
+Accuracy of deer : 94 %
+
+Accuracy of dog : 83 %
+
+Accuracy of frog : 94 %
+
 Accuracy of horse : 92 %
-Accuracy of  ship : 96 %
+
+Accuracy of ship : 96 %
+
 Accuracy of truck : 95 %
