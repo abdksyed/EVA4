@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 cuda = torch.cuda.is_available()
-print("CUDA Available?", cuda)
 
 # For Reproducibility
 torch.manual_seed(1)

@@ -2,7 +2,8 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
-import test, train
+import packages.test as test
+import packages.train as train
 
 classes = ('plane', 'car', 'bird', 'cat',
             'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
