@@ -27,14 +27,14 @@ Achieve the following on the **CIFAR-10** dataset:
 - ResNet18 - BasicBlock - [2,2,2,2]
 - Batch Size: 128
 - Number of Parameters: 11,173,962
-- Epochs: 50
+- Epochs: 25
 
 ### **Results**
 
 Achieved accuracy of
 
-**Test - 91.66%**
-**Train - 96.66%**
+**Test - 90.16%**
+**Train - 95.30%**
 
 Misclassified Images:
 
@@ -70,3 +70,24 @@ Accuracy of horse : 93 %
 Accuracy of ship : 94 %
 
 Accuracy of truck : 96 %
+
+
+Accuracy of plane : 96 %
+
+Accuracy of   car : 97 %
+
+Accuracy of  bird : 85 %
+
+Accuracy of   cat : 74 %
+
+Accuracy of  deer : 93 %
+
+Accuracy of   dog : 86 %
+
+Accuracy of  frog : 92 %
+
+Accuracy of horse : 93 %
+
+Accuracy of  ship : 90 %
+
+Accuracy of truck : 93 %
