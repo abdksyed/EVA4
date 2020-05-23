@@ -8,9 +8,11 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-Colab file:(https://colab.research.google.com/drive/1MdT7EtrNu9Tqqjp25coPefJoZjIHYYzy?usp=sharing)
+Colab file:(https://colab.research.google.com/drive/116PGNm13iu26DlpDQseY2tGFZ-02hJOQ?usp=sharing)
 
-To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S8/packages folder of EVA4 repo.
+To run the model, first we need to install the package 'pynoob' using !pip install pynoob.
+
+Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the S8/packages folder of EVA4 repo.
 
 
 ### **Objective**
@@ -27,46 +29,47 @@ Achieve the following on the **CIFAR-10** dataset:
 - ResNet18 - BasicBlock - [2,2,2,2]
 - Batch Size: 128
 - Number of Parameters: 11,173,962
-- Epochs: 50
+- Epochs: 25
 
 ### **Results**
 
 Achieved accuracy of
 
-**Test - 91.66%**
-**Train - 96.66%**
+**Test - 90.16%**
+
+**Train - 95.30%**
 
 Misclassified Images:
 
-![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/S8/Images/MissClassify.png)
+![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/08_StandardArchitectures/Images/MissClassify.png)
 
 Train and Test Accuracies and Loss:
 
-![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/S8/Images/LossandAcc.png)
+![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/08_StandardArchitectures/Images/LossandAcc.png)
 
 Train vs Test Accuracy:
 
-![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/S8/Images/TestvTrainAcc.png)
+![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/08_StandardArchitectures/Images/TestvTrainAcc.png)
 
 
 Class Wise Accuracies:
 
-Accuracy of plane : 93 %
+Accuracy of plane : 96 %
 
-Accuracy of car : 96 %
+Accuracy of   car : 97 %
 
-Accuracy of bird : 89 %
+Accuracy of  bird : 85 %
 
-Accuracy of cat :  82%
+Accuracy of   cat : 74 %
 
-Accuracy of deer : 91 %
+Accuracy of  deer : 93 %
 
-Accuracy of dog : 86 %
+Accuracy of   dog : 86 %
 
-Accuracy of frog : 93 %
+Accuracy of  frog : 92 %
 
 Accuracy of horse : 93 %
 
-Accuracy of ship : 94 %
+Accuracy of  ship : 90 %
 
-Accuracy of truck : 96 %
+Accuracy of truck : 93 %
