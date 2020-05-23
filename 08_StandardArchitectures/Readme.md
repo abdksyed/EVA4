@@ -10,7 +10,9 @@
 
 Colab file:(https://colab.research.google.com/drive/116PGNm13iu26DlpDQseY2tGFZ-02hJOQ?usp=sharing)
 
-To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S8/packages folder of EVA4 repo.
+To run the model, first we need to install the package 'pynoob' using !pip install pynoob.
+
+Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the S8/packages folder of EVA4 repo.
 
 
 ### **Objective**
