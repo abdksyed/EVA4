@@ -34,6 +34,7 @@ Achieve the following on the **CIFAR-10** dataset:
 Achieved accuracy of
 
 **Test - 90.16%**
+
 **Train - 95.30%**
 
 Misclassified Images:
@@ -50,27 +51,6 @@ Train vs Test Accuracy:
 
 
 Class Wise Accuracies:
-
-Accuracy of plane : 93 %
-
-Accuracy of car : 96 %
-
-Accuracy of bird : 89 %
-
-Accuracy of cat :  82%
-
-Accuracy of deer : 91 %
-
-Accuracy of dog : 86 %
-
-Accuracy of frog : 93 %
-
-Accuracy of horse : 93 %
-
-Accuracy of ship : 94 %
-
-Accuracy of truck : 96 %
-
 
 Accuracy of plane : 96 %
 
