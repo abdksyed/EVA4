@@ -235,6 +235,4 @@ return x
 
 **Packages**
 
-Are available in the package folder
-
 used modules for data.py, train.py, test.py, Albtransform.py, summary2.py, utils,classifier.py
