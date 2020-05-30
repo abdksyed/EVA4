@@ -22,7 +22,7 @@ Achieve the following on the **CIFAR-10** dataset:
 
 ### **Model Statistics:**
 
-- ResNet18 - BasicBlock - [2,2,2,2]
+- Custom ResNet18 - BasicBlock - [2,2,2,2] - Last Layer Stride = 1 - So Final Output is 8 x 8!
 - Batch Size: 128
 - Number of Parameters: 11,173,962
 - Epochs: 15
