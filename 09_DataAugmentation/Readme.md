@@ -31,7 +31,7 @@ Achieve the following on the **CIFAR-10** dataset:
 
 Achieved accuracy of
 
-**Test - 86.85%**
+**Test - 86.95%**
 
 **Train - 90.65%**
 
