@@ -8,7 +8,8 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-Colab file:(https://colab.research.google.com/github/abksyed/EVA4/blob/master/09_DataAugmentation/Assignment_S9.ipynb)
+Colab file:(https://colab.research.google.com/drive/1ssQ0fLGoJaR0LQqiMovLqpAXC11_oaeY?usp=sharing)
+
 
 To run the model, first we need to install the package 'pynoob' using !pip install pynoob.
 
@@ -45,9 +46,17 @@ Achieve the following on the **CIFAR-10** dataset:
 
 Achieved accuracy of
 
-**Test - 92.95%**
+**Test - 92.53%**
 
-**Train - 90.65%**
+**Train - 97.59%**
+
+Viewing Data:
+
+![DataView1](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView1.png)
+![DataView2](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView2.png)
+![DataView3](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView3.png)
+![DataView4](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView4.png)
+![DataView5](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView5.png)
 
 Learning Rate Finder:
 
@@ -57,10 +66,6 @@ Change in Learning Rate:
 
 ![ChangeLR.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/ChangeLR.png)
 
-Misclassified Images:
-
-![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/MisClassify.png)
-
 Train and Test Accuracies and Loss:
 
 ![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/TrainTestLossAcc.png)
@@ -68,6 +73,10 @@ Train and Test Accuracies and Loss:
 Train vs Test Accuracy:
 
 ![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/TestvTrain.png)
+
+Misclassified Images:
+
+![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/MisClassify.png)
 
 GradCAM for Mis Classified Images (w.r.t Predicted Class):
 ![Mis_HeatMap.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Mis_GradCAM_Pred.png)
@@ -78,22 +87,22 @@ GradCAM for Mis Classified Images(w.r.t Actual Class):
 
 Class Wise Accuracies:
 
-Accuracy of plane : 85 %
+Accuracy of plane : 92 %
 
-Accuracy of   car : 97 %
+Accuracy of   car : 95 %
 
-Accuracy of  bird : 85 %
+Accuracy of  bird : 89 %
 
-Accuracy of   cat : 79 %
+Accuracy of   cat : 85 %
 
-Accuracy of  deer : 92 %
+Accuracy of  deer : 93 %
 
-Accuracy of   dog : 80 %
+Accuracy of   dog : 86 %
 
-Accuracy of  frog : 83 %
+Accuracy of  frog : 95 %
 
-Accuracy of horse : 86 %
+Accuracy of horse : 94 %
 
-Accuracy of  ship : 88 %
+Accuracy of  ship : 96 %
 
-Accuracy of truck : 91 %
+Accuracy of truck : 95 %
