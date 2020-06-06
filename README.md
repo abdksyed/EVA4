@@ -1,4 +1,4 @@
-# TSAI-DeepVision-EVA4.0
+# TSAI-Vision-EVA4.0
 
 Extensive Vision AI 4.0
 --
