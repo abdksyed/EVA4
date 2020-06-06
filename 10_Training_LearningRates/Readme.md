@@ -102,6 +102,13 @@ For every 3 epochs where the test accuracy is lower by '0.1%' then the recent be
 **GradCAM for Mis Classified Images(w.r.t Actual Class):**
 ![Mis_GradCAM.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Mis_GradCAM_Actual.png)
 
+## **Analysing GradCAM Images**
+
+**Actual**
+![Plane_Horse_Act.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Act.png)
+
+**Predicted**
+![Plane_Horse_Pred.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Pred.png)
 
 **Class Wise Accuracies:**
 
