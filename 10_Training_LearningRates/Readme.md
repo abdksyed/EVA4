@@ -110,7 +110,24 @@ For every 3 epochs where the test accuracy is lower by '0.1%' then the recent be
 **Predicted**
 ![Plane_Horse_Pred.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Pred.png)
 
-**Class Wise Accuracies:**
+It is clear that in 2nd image, when GradCAM is generated w.r.t 'plane'(predicted) class the max activations are in shape of wings around the sides of image, where as when GradCAM is generated w.r.t 'horse'(actual) class the max activations are around the face of the horse.
+
+**Other Examples:**
+
+**Actual**
+![Ship_Bird_Act.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Act.png)
+
+**Predicted**
+![Ship_Bird_Pred.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Pred.png)
+
+**Actual**
+![Truck_Car_Act.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Act.png)
+
+**Predicted**
+![Truck_Car_Pred.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Pred.png)
+
+
+## **Class Wise Accuracies:**
 
 Accuracy of plane : 92 %
 
