@@ -29,7 +29,7 @@ Achieve the following on the **CIFAR-10** dataset:
 - Use this repo: https://github.com/davidtvs/pytorch-lr-finder (Links to an external site.) 
     - Move LR Finder code to your modules
     - Implement LR Finder (for SGD, not for ADAM)
-    - Implement ReduceLROnPlatea: https://pytorch.org/docs/stable/optim.html#torch.optim.lr_scheduler.ReduceLROnPlateau (Links to an external site.)
+    - Implement ReduceLROnPlateau: https://pytorch.org/docs/stable/optim.html#torch.optim.lr_scheduler.ReduceLROnPlateau (Links to an external site.)
 - Find best LR to train your model
 - Use SDG with Momentum
 - Train for 50 Epochs. 
@@ -64,9 +64,25 @@ Achieved accuracy of
 
 ![LRFinderPlot.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/LRFinderPlot.png)
 
+*Best LR:* **0.053366992312063086**
+
 **Change in Learning Rate:**
 
 ![ChangeLR.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/ChangeLR.png)
+
+**Comments on ReduceLROnPlateau:**
+
+scheduler = ReduceLROnPlateau(optimizer, mode='max', patience=3, verbose= True, threshold=0.1, threshold_mode= 'abs')
+
+scheduler.step(test.test_acc[-1])
+
+The scheduler used was ReduceLROnPlateau, which "Reduce learning rate when a metric has stopped improving. Models often benefit from reducing the learning rate by a factor of 2-10 once learning stagnates. This scheduler reads a metrics quantity and if no improvement is seen for a ‘patience’ number of epochs, the learning rate is reduced."
+
+Here the mode was set to 'max', as the metric was Testing Accuracy. We iterated with test loss and test accuracy using different threshold values and threshold_mode types and both gave similar results, but tweaking threshold values for loss is very difficult.
+
+So we went ahead with test accuracy as metric, using threshold_mode as 'abs', which sets "dynamic_threshold = best + threshold" in max mode.
+
+For every 3 epochs where the test accuracy is lower by '0.1%' then the recent best accuracy, the learning rate reduces by a factor of 10 (new_lr = old_lr * 0.1). 
 
 **Train and Test Accuracies and Loss:**
 
