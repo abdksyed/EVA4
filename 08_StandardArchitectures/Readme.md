@@ -12,8 +12,10 @@ Colab file:(https://colab.research.google.com/drive/116PGNm13iu26DlpDQseY2tGFZ-0
 
 To run the model, first we need to install the package 'pynoob' using !pip install pynoob.
 
-Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the S8/packages folder of EVA4 repo.
+Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the 08_StandardArchitectures/packages folder of EVA4 repo.
 
+Link to pynoob: (https://github.com/abksyed/pynoob)
+Link to model used: (https://github.com/abksyed/EVA4/blob/master/models/S8-model_ResNet.py)
 
 ### **Objective**
 
