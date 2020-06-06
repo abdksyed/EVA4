@@ -96,13 +96,7 @@ For every 3 epochs where the test accuracy is lower by '0.1%' then the recent be
 
 ![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/MisClassify.png)
 
-**GradCAM for Mis Classified Images (w.r.t Predicted Class):**
-![Mis_HeatMap.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Mis_GradCAM_Pred.png)
-
-**GradCAM for Mis Classified Images(w.r.t Actual Class):**
-![Mis_GradCAM.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Mis_GradCAM_Actual.png)
-
-## **Analysing GradCAM Images**
+## **Analysing few GradCAM Images**
 
 **Actual**
 ![Plane_Horse_Act.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Act.png)
@@ -115,16 +109,23 @@ It is clear that in 2nd image, when GradCAM is generated w.r.t 'plane'(predicted
 **Other Examples:**
 
 **Actual**
-![Ship_Bird_Act.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Act.png)
+![Ship_Bird_Act.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Ship_Bird_Act.png)
 
 **Predicted**
-![Ship_Bird_Pred.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Pred.png)
+![Ship_Bird_Pred.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Ship_Bird_Pred.png)
 
 **Actual**
-![Truck_Car_Act.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Act.png)
+![Truck_Car_Act.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Truck_Car_Act.png)
 
 **Predicted**
-![Truck_Car_Pred.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Plane_Horse_Pred.png)
+![Truck_Car_Pred.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Truck_Car_Pred.png)
+
+
+## **Entire GradCAM for Mis Classified Images (w.r.t Predicted Class):**
+![Mis_HeatMap.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Mis_GradCAM_Pred.png)
+
+## **Entire GradCAM for Mis Classified Images(w.r.t Actual Class):**
+![Mis_GradCAM.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Mis_GradCAM_Actual.png)
 
 
 ## **Class Wise Accuracies:**
