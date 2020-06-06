@@ -50,7 +50,7 @@ Achieved accuracy of
 
 **Train - 97.59%**
 
-Viewing Data:
+**Viewing Data:**
 
 ![DataView1](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView1.png)
 ![DataView2](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView2.png)
@@ -58,34 +58,34 @@ Viewing Data:
 ![DataView4](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView4.png)
 ![DataView5](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/DataView5.png)
 
-Learning Rate Finder:
+**Learning Rate Finder:**
 
 ![LRFinderPlot.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/LRFinderPlot.png)
 
-Change in Learning Rate:
+**Change in Learning Rate:**
 
 ![ChangeLR.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/ChangeLR.png)
 
-Train and Test Accuracies and Loss:
+**Train and Test Accuracies and Loss:**
 
 ![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/TrainTestLossAcc.png)
 
-Train vs Test Accuracy:
+**Train vs Test Accuracy:**
 
 ![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/TestvTrain.png)
 
-Misclassified Images:
+**Misclassified Images:**
 
 ![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/MisClassify.png)
 
-GradCAM for Mis Classified Images (w.r.t Predicted Class):
+**GradCAM for Mis Classified Images (w.r.t Predicted Class):**
 ![Mis_HeatMap.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Mis_GradCAM_Pred.png)
 
-GradCAM for Mis Classified Images(w.r.t Actual Class):
+**GradCAM for Mis Classified Images(w.r.t Actual Class):**
 ![Mis_GradCAM.png](https://github.com/abksyed/EVA4/blob/master/10_Training_LearningRates/Images/Mis_GradCAM_Actual.png)
 
 
-Class Wise Accuracies:
+**Class Wise Accuracies:**
 
 Accuracy of plane : 92 %
 
