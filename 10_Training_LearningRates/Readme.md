@@ -19,6 +19,8 @@ Link to pynoob: (https://github.com/abksyed/pynoob)
 
 Link to model used: (https://github.com/abksyed/EVA4/blob/master/models/S10_model_CusResNet.py)
 
+Link to all models: (https://github.com/abksyed/EVA4/blob/master/models/)
+
 ### **Objective**
 
 Achieve the following on the **CIFAR-10** dataset:
