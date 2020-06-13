@@ -109,20 +109,20 @@ Achieved accuracy of
 
 Accuracy of plane : 92 %
 
-Accuracy of   car : 95 %
+Accuracy of   car : 96 %
 
-Accuracy of  bird : 89 %
+Accuracy of  bird : 86 %
 
-Accuracy of   cat : 85 %
+Accuracy of   cat : 78 %
 
-Accuracy of  deer : 93 %
+Accuracy of  deer : 90 %
 
-Accuracy of   dog : 86 %
+Accuracy of   dog : 77 %
 
-Accuracy of  frog : 95 %
+Accuracy of  frog : 94 %
 
 Accuracy of horse : 94 %
 
-Accuracy of  ship : 96 %
+Accuracy of  ship : 91 %
 
-Accuracy of truck : 95 %
+Accuracy of truck : 89 %
