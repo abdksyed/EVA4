@@ -8,7 +8,7 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-Colab file:(https://colab.research.google.com/drive/1ssQ0fLGoJaR0LQqiMovLqpAXC11_oaeY?usp=sharing)
+Colab file:(https://colab.research.google.com/drive/1EY1r2mzga7bmBBYUWGY2aNGTuijCCkAG?usp=sharing)
 
 
 To run the model, first we need to install the package 'pynoob' using !pip install pynoob.
@@ -17,7 +17,7 @@ Alternately, we can upload all the necessary packagesto the colab directory. The
 
 Link to pynoob: (https://github.com/abksyed/pynoob)
 
-Link to model used: (https://github.com/abksyed/EVA4/blob/master/models/S10_model_CusResNet.py)
+Link to model used: (https://github.com/abksyed/EVA4/blob/master/models/S11_model.py)
 
 Link to all models: (https://github.com/abksyed/EVA4/blob/master/models/)
 
