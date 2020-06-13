@@ -13,7 +13,7 @@ Colab file:(https://colab.research.google.com/drive/1EY1r2mzga7bmBBYUWGY2aNGTuij
 
 To run the model, first we need to install the package 'pynoob' using !pip install pynoob.
 
-Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the 10_Training_LearningRates/packages folder of EVA4 repo.
+Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the 11_SuperConvergence/packages folder of EVA4 repo.
 
 Link to pynoob: (https://github.com/abksyed/pynoob/tree/master/pynoob)
 
