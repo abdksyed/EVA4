@@ -91,7 +91,7 @@ Achieved accuracy of
 
 **Train vs Test Accuracy:**
 
-![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/TestvTrain.png.png)
+![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/TestvTrain.png.png)
 
 **Misclassified Images:**
 
