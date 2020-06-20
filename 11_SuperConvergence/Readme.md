@@ -11,7 +11,7 @@
 Colab file:(https://colab.research.google.com/drive/1EY1r2mzga7bmBBYUWGY2aNGTuijCCkAG?usp=sharing)
 
 
-To run the model, first we need to install the package 'pynoob' using !pip install pynoob.
+To run the model, first we need to install the package 'pynoob' using !pip install pynoob==0.1.0.6
 
 Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the 11_SuperConvergence/packages folder of EVA4 repo.
 
@@ -73,9 +73,9 @@ Achieve the following on the **CIFAR-10** dataset:
 
 Achieved accuracy of
 
-**Test - 89.2%**
+**Test - 92.68%**
 
-**Train - 95.794%**
+**Train - 97.5%**
 
 **Learning Rate Finder:**
 
@@ -109,22 +109,22 @@ Achieved accuracy of
 
 ## **Class Wise Accuracies:**
 
-Accuracy of plane : 92 %
+Accuracy of plane : 95 %
 
-Accuracy of   car : 96 %
+Accuracy of   car : 97 %
 
-Accuracy of  bird : 86 %
+Accuracy of  bird : 88 %
 
-Accuracy of   cat : 78 %
+Accuracy of   cat : 84 %
 
-Accuracy of  deer : 90 %
+Accuracy of  deer : 93 %
 
-Accuracy of   dog : 77 %
+Accuracy of   dog : 88 %
 
-Accuracy of  frog : 94 %
+Accuracy of  frog : 96 %
 
-Accuracy of horse : 94 %
+Accuracy of horse : 95 %
 
-Accuracy of  ship : 91 %
+Accuracy of  ship : 94 %
 
-Accuracy of truck : 89 %
+Accuracy of truck : 91 %
