@@ -8,7 +8,7 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-Colab file:(https://colab.research.google.com/drive/1EY1r2mzga7bmBBYUWGY2aNGTuijCCkAG?usp=sharing)
+Colab file:(https://colab.research.google.com/drive/1j4tQxzskc4YI-G2i1nG6hja2NowSclqv?usp=sharing)
 
 
 To run the model, first we need to install the package 'pynoob' using !pip install pynoob==0.1.0.6
