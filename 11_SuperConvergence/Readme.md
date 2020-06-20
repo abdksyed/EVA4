@@ -81,6 +81,8 @@ Achieved accuracy of
 
 ![LRFinderPlot.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/LRFinderPlot.png)
 
+*Using LR 0.032 even if loss is diverged, to get regularization effect and create voltality in the descent. Since, it is constrained to reach max LR at 5th epoch so to get more diversity going from 0.001(max_lr/32) tp 0.032. This was decided after many empirical iterations.*
+
 
 **Change in Learning Rate:**
 

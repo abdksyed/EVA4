@@ -29,7 +29,7 @@ class BasicResBlock(nn.Module):
 
         out = self.conv1(out)
         out = self.bn1(out)
-        #out = out + x  # If we want to give skip connection in ResNet block. 
+        #out = out + x  #Can be used to provide extra shortcut inside ResBlock itself
 
         out = F.relu(out)
 

@@ -232,7 +232,7 @@ class LRFinder(object):
         """
 
         # Reset test results
-        self.history = {"lr": [], "loss": [], "acc": [], 'raw_loss': []}
+        self.history = {"lr": [], "loss": [], "acc": [], 'raw_loss': [], 'raw_acc': []}
         self.best_loss = None
         self.best_acc = None
 
@@ -294,6 +294,7 @@ class LRFinder(object):
             lr_schedule.step()
 
             rloss = loss
+            racc = acc
 
             # Track the best loss and smooth it if smooth_f is specified
             if iteration == 0:
@@ -303,6 +304,7 @@ class LRFinder(object):
             else:
                 if smooth_f > 0:
                     loss = smooth_f * loss + (1 - smooth_f) * self.history["loss"][-1]
+                    acc = smooth_f * acc + (1 - smooth_f) * self.history["acc"][-1]
                 if loss < self.best_loss:
                     self.best_loss = loss
                 if acc > self.best_acc:
@@ -312,6 +314,7 @@ class LRFinder(object):
             self.history["loss"].append(loss)
             self.history["acc"].append(acc)
             self.history["raw_loss"].append(rloss)
+            self.history["raw_acc"].append(racc)
             if loss > diverge_th * self.best_loss:
                 print("Stopping early, the loss has diverged")
                 break
@@ -458,46 +461,37 @@ class LRFinder(object):
 
         # Get the data to plot from the history dictionary. Also, handle skip_end=0
         # properly so the behaviour is the expected
-            lrs = self.history["lr"]
-            losses = self.history["loss"]
-            acc = self.history["acc"]
-            if skip_end == 0:
-                lrs = lrs[skip_start:]
-                losses = losses[skip_start:]
-            else:
-                lrs = lrs[skip_start:-skip_end]
-                losses = losses[skip_start:-skip_end]
-                acc = acc[skip_start:-skip_end]
+        lrs = self.history["lr"]
+        losses = self.history["loss"]
+        acc = self.history["acc"]
+        if skip_end == 0:
+            lrs = lrs[skip_start:]
+            losses = losses[skip_start:]
+        else:
+            lrs = lrs[skip_start:-skip_end]
+            losses = losses[skip_start:-skip_end]
+            acc = acc[skip_start:-skip_end]
 
         # Create the figure and axes object if axes was not already given
-        #fig = plt.subplot(1,2)
-        # if ax is None:
-        #     fig, ax = plt.subplots(1,2)
-
-        # Plot loss as a function of the learning rate
-        plt.subplot(1,2,2)
-        plt.plot(lrs, losses)
+        fig, axis = plt.subplots(1,2, figsize= (10,4))
+        axis[0].plot(lrs, losses)
+        axis[0].set_xlabel('Learning Rate')
+        axis[0].set_ylabel('Loss')
+        axis[0].set_title('Range Test - LR vs Loss')
         if log_lr:
-            plt.xscale("log")
-        plt.xlabel("Learning rate")
-        plt.ylabel("Loss")
+            axis[0].set_xscale('log')
 
-        # if show_lr is not None:
-        #     ax.axvline(x=show_lr, color="red")
-
-        # Plot accuracy as a function of the learning rate
-        plt.subplot(1,2,1)
-        plt.subplots_adjust(right= 1.5)
-        plt.plot(lrs, acc)
+        axis[1].plot(lrs, acc)
+        axis[1].set_xlabel('Learning Rate')
+        axis[1].set_ylabel('Accuracy')
+        axis[1].set_title('Range Test - LR vs Accuracy')
         if log_lr:
-            plt.xscale("log")
-        plt.xlabel("Learning rate")
-        plt.ylabel("Accuracy")
+            axis[1].set_xscale('log')
 
         # Show only if the figure was created internally
         plt.show()
 
-        return ax
+        return axis
 
 
 class LinearLR(_LRScheduler):

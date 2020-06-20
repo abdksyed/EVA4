@@ -19,8 +19,8 @@ class Sara():
         self.lr_variations = []
         self.best_model = None
 
-    def loaders(self, trans=CIFAR10_AlbumTrans, dataset= CIFAR10DataLoader, batch_size= 128):
-        transformation = trans()
+    def loaders(self, trans=CIFAR10_AlbumTrans, aug= None, dataset= CIFAR10DataLoader, batch_size= 128):
+        transformation = trans(augs= aug)
         self.data = dataset(transformation, batch_size)
         return self.data.get_loaders() 
 
@@ -67,19 +67,37 @@ class Sara():
             ax[0].plot(lr[i][10:-5], loss[i][10:-5], label=str(weight_decays[i]))
         ax[0].set_xscale('log')
         ax[0].legend(loc='upper left')
+        ax[0].set_xlabel("Learning rate")
+        ax[0].set_ylabel("Loss")
 
         for i in range(len(weight_decays)):
             ax[1].plot(lr[i][10:-5], acc[i][10:-5], label=str(weight_decays[i]))
         ax[1].set_xscale('log')
         ax[1].legend(loc='upper left')
+        ax[1].set_xlabel("Learning rate")
+        ax[1].set_ylabel("Accuracy")
 
 
-    def fit(self, train_loader, test_loader, epochs= 10, scheduler={'name':None}, lr=0.01, weight_decay= 0, plot_lr= False):
+    def lr_range_test(self, device, epochs, model, loader, start_lr=1e-4, end_lr=10,
+                 criterion= nn.CrossEntropyLoss(), optimizer_name= 'SGD', smoothing= 0.05, best_lr_from = 'loss'):
+        self.range_test = Range_Test(device=device, epochs= epochs, model_name= model, loader= loader, start_lr=start_lr, 
+        end_lr=end_lr, criterion= criterion, optimizer_name= optimizer_name, smoothing= smoothing)
+        self.range_test.range_test()
+        self.range_test.plot()
+        
+        if best_lr_from == 'loss'.lower():
+            self.best_lr = self.range_test.lr_loss
+        elif best_lr_from == 'accuracy'.lower():
+            self.best_lr = self.range_test.lr_acc
+        else:
+            self.best_lr = start_lr
+
+    def fit(self, train_loader, test_loader, epochs= 10, scheduler={'name':None}, lr=0.01, momentum=0.9, weight_decay= 0, plot_lr= False):
         
         if self.best_lr is None:
             self.best_lr = lr
         
-        optimizer = self.optimizer(self.model_name.parameters(), lr= self.best_lr, momentum= 0.9, weight_decay= weight_decay)
+        optimizer = self.optimizer(self.model_name.parameters(), lr= self.best_lr, momentum= momentum, weight_decay= weight_decay)
         
         if scheduler['name'] is not None:
                 if scheduler['name'] == 'OneCycleLR':
@@ -99,8 +117,8 @@ class Sara():
         for epoch in range(epochs):
             print('='*20 + f' EPOCH: {epoch+1} ' + '='*20)
             print(f'LR used: {optimizer.param_groups[0]["lr"]}')
-            self.train.train(sched)
             self.lr_variations.append(optimizer.param_groups[0]['lr'])
+            self.train.train(sched)
             if scheduler['name'] is not None and scheduler['name'] != 'OneCycleLR':
                 sched.step()
             self.test.test()
