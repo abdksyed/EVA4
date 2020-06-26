@@ -68,7 +68,9 @@ Achieved accuracy of
 
 ![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/MisClassify.png)
 
-**Lets check for predicted/actual classes for some of examples from above
+**Lets check for predicted/actual classes for some of examples from above**
+
+*For 5th row 1st Image and 5th row and 5th Image.*
 
 ![CheckClasses.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/CheckClasses.png)
 
