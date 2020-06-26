@@ -8,8 +8,9 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-Colab file:(https://colab.research.google.com/drive/1j4tQxzskc4YI-G2i1nG6hja2NowSclqv?usp=sharing)
+Colab file:(https://colab.research.google.com/drive/1SHm8INvtwTBQk2xCugIi3y5xNb3ApT3U?usp=sharing)
 
+GitHub Link: (https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Assignment_S12.ipynb)
 
 To run the model, first we need to install the package 'pynoob' using !pip install pynoob==0.1.0.7
 
