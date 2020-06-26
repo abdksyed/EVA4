@@ -68,7 +68,12 @@ Achieved accuracy of
 
 ![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/MisClassify.png)
 
+**Lets check for predicted/actual classes for some of examples from above
+
+![CheckClasses.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/CheckClasses.png)
+
 **For List of Classes in TinyImageNet**
+
 (https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/classes.txt)
 
 ## **Entire GradCAM for Mis Classified Images (w.r.t Predicted Class):**
