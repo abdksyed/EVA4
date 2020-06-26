@@ -11,13 +11,13 @@
 Colab file:(https://colab.research.google.com/drive/1j4tQxzskc4YI-G2i1nG6hja2NowSclqv?usp=sharing)
 
 
-To run the model, first we need to install the package 'pynoob' using !pip install pynoob==0.1.0.6
+To run the model, first we need to install the package 'pynoob' using !pip install pynoob==0.1.0.7
 
-Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the 11_SuperConvergence/packages folder of EVA4 repo.
+Alternately, we can upload all the necessary packagesto the colab directory. The packages can be found in the 12_TinyImageNet_Classification/packages folder of EVA4 repo.
 
 Link to pynoob: (https://github.com/abksyed/pynoob/tree/master/pynoob)
 
-Link to model used: (https://github.com/abksyed/EVA4/blob/master/models/S11_model.py)
+Link to model used: (https://github.com/abksyed/EVA4/blob/master/models/S12_ResNet_S12.py)
 
 Link to all models: (https://github.com/abksyed/EVA4/blob/master/models/)
 
@@ -25,108 +25,54 @@ Link to Deep Learning Assistant Sara powered by Newton: (https://github.com/abks
 
 ### **Objective**
 
-Achieve the following on the **CIFAR-10** dataset:
+Assignment A:
 
-- Write a code that draws this curve (without the arrows). In submission, you'll upload your drawn curve and code for that
+- Download TINY IMAGENET (Links to an external site.) dataset. 
+- Train ResNet18 on this dataset (70/30 split) for 50 Epochs. Target 50%+ Validation Accuracy. 
+- Submit Results. Of course, you are using your own package for everything.
 
-![Assignment.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/Assignment.png)
-
-- Write a code which
-
-    - uses this new ResNet Architecture for Cifar10:
-        - PrepLayer - Conv 3x3 s1, p1) >> BN >> RELU [64k]
-        - Layer1 -
-            - X = Conv 3x3 (s1, p1) >> MaxPool2D >> BN >> RELU [128k]
-            - R1 = ResBlock( (Conv-BN-ReLU-Conv-BN-ReLU))(X) [128k] 
-            - Add(X, R1)
-        - Layer 2 -
-            - Conv 3x3 [256k]
-            - MaxPooling2D
-            - BN
-            - ReLU
-        - Layer 3 -
-            - X = Conv 3x3 (s1, p1) >> MaxPool2D >> BN >> RELU [512k]
-            - R2 = ResBlock( (Conv-BN-ReLU-Conv-BN-ReLU))(X) [512k]
-            - Add(X, R2)
-        - MaxPooling with Kernel Size 4
-        - FC Layer 
-        - SoftMax
-    - Uses One Cycle Policy such that:
-        - Total Epochs = 24
-        - Max at Epoch = 5
-        - LRMIN = FIND
-        - LRMAX = FIND
-        - NO Annihilation
-    - Uses this transform -RandomCrop 32, 32 (after padding of 4) >> FlipLR >> Followed by CutOut(8, 8)
-    - Batch size = 512
-    - Target Accuracy: 90%. 
-    - The lesser the modular your code is (i.e. more the code you have written in your Colab file), less marks you'd get
 
 ### **Model Statistics:**
 
 - Custom Model 
-- Batch Size: 512
-- Number of Parameters: 6,573,130
-- Epochs: 21
+- Batch Size: 256
+- Number of Parameters: 11,271,432
+- Epochs: 25
 
 ### **Results**
 
 Achieved accuracy of
 
-**Test - 92.68%**
+**Test - 53.82%**
 
-**Train - 97.5%**
+**Train - 83.26%**
 
 **Learning Rate Finder:**
 
-![LRFinderPlot.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/LRFinderPlot.png)
-
-*Using LR 0.032 even if loss is diverged, to get regularization effect and create voltality in the descent. Since, it is constrained to reach max LR at 5th epoch so to get more diversity going from 0.001(max_lr/32) tp 0.032. This was decided after many empirical iterations.*
-
+![LRFinderPlot.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/LRFinderPlot.png)
 
 **Change in Learning Rate:**
 
-![ChangeLR.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/OneCycleLR.png)
+![ChangeLR.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/OneCycleLR.png)
 
 
 **Train and Test Accuracies and Loss:**
 
-![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/TrainTestLossAcc.png)
+![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/TrainTestLossAcc.png)
 
 **Train vs Test Accuracy:**
 
-![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/TestvTrain.png)
+![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/TestvTrain.png)
 
 **Misclassified Images:**
 
-![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/MisClassify.png)
+![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/MisClassify.png)
 
+**For List of Classes in TinyImageNet**
+(https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/classes.txt)
 
 ## **Entire GradCAM for Mis Classified Images (w.r.t Predicted Class):**
-![Mis_GradCAM_Pred.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/Mis_GradCAM_Pred.png)
+![Mis_GradCAM_Pred.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/Mis_GradCAM_Pred.png)
 
 ## **Entire GradCAM for Mis Classified Images(w.r.t Actual Class):**
-![Mis_GradCAM_Actual.png](https://github.com/abksyed/EVA4/blob/master/11_SuperConvergence/Images/Mis_GradCAM_Actual.png)
-
-
-## **Class Wise Accuracies:**
-
-Accuracy of plane : 95 %
-
-Accuracy of   car : 97 %
-
-Accuracy of  bird : 88 %
-
-Accuracy of   cat : 84 %
-
-Accuracy of  deer : 93 %
-
-Accuracy of   dog : 88 %
-
-Accuracy of  frog : 96 %
-
-Accuracy of horse : 95 %
-
-Accuracy of  ship : 94 %
-
-Accuracy of truck : 91 %
+![Mis_GradCAM_Actual.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/Mis_GradCAM_Actual.png)
