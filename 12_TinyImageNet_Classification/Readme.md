@@ -117,3 +117,6 @@ The main key is the Image Name and the value is characteristics such as,
 
 *K=4*
 ![K=3cluster.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/JerryBhau/Annotations/K=4cluster.png)
+
+**IOU**
+![iou.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/JerryBhau/Annotations/iou.png)
