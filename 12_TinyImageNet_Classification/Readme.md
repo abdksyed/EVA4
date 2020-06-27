@@ -8,9 +8,9 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-Colab file:(https://colab.research.google.com/drive/1SHm8INvtwTBQk2xCugIi3y5xNb3ApT3U?usp=sharing)
+Colab Link for Assignment A:(https://colab.research.google.com/drive/1SHm8INvtwTBQk2xCugIi3y5xNb3ApT3U?usp=sharing)
 
-GitHub Link: (https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Assignment_S12.ipynb)
+GitHub Link for Assignment A: (https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Assignment_S12.ipynb)
 
 To run the model, first we need to install the package 'pynoob' using !pip install pynoob==0.1.0.7
 
@@ -95,6 +95,9 @@ Achieved accuracy of
 - Describe the contents of this JSON file in FULL details (you don't need to describe all 10 instances, anyone would work). 
 - Find out the best total numbers of clusters. Upload link to your Colab File uploaded to GitHub.
 
+Colab Link for Assignment B: (https://colab.research.google.com/drive/1Aqo9rNg-DUd4KAonJpLq5BA_dsy4PCrM?usp=sharing)
+
+GitHub Link for Assignment B: (https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/JerryBhau/Annotations/Assignment_S12_Annotate.ipynb)
 ### Exaplanation of the json file
 The JSON file is a Key:Value pair in a text format, where the Keys are unique and mapped to respective data regarding it under values.
 
