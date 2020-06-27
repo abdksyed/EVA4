@@ -108,6 +108,7 @@ The main key is the Image Name and the value is characteristics such as,
 - regions: this is an array consisting of the bounding boxes
   - shape_attributes: how the Bounding Box is defined, could be a circle, rectangle, etc. The x and y values are the top left corner of the Bounding Box. The width and height is the total width and height of the box.
   - region_attributes: this contained the label for the region, here 'Jerrry'.
+  *If more than two bounding box are available, then the regions and region_attributes gets repreated for each bonding box*
 - file_attributes: The other extra data like captions, public_domain and urls.
 
 **Sample Bounding Box Image**
