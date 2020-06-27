@@ -113,19 +113,7 @@ The main key is the Image Name and the value is characteristics such as,
 **K means Clustering**
 
 *K=3*
-![K=3cluster.png]((https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/JerryBhau/Annotations/K=3cluster.png)
+![K=3cluster.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/JerryBhau/Annotations/K=3cluster.png)
 
 *K=4*
-![K=3cluster.png]((https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/JerryBhau/Annotations/K=4cluster.png)
-
-Exaplanation of the json file
-The JSON file is a Key:Value pair in a text format, where the Keys are unique and mapped to respective data regarding it under values.
-
-The main key is the Image Name and the value is characteristics such as,
-
-filename: the name of the file
-size: the size of the image.
-regions: this is an array consisting of the bounding boxes
-shape_attributes: how the Bounding Box is defined, could be a circle, rectangle, etc. The x and y values are the top left corner of the Bounding Box. The width and height is the total width and height of the box.
-region_attributes: this contained the label for the region, here 'Jerrry'.
-file_attributes: The other extra data like captions, public_domain and urls.
+![K=3cluster.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/JerryBhau/Annotations/K=4cluster.png)
