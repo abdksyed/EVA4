@@ -53,4 +53,6 @@ Training on [Colab](https://colab.research.google.com/github/abksyed/EVA4/blob/m
 
 [![Guitar by Master!](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Images/Rohan_Guitar.jpeg)](https://youtu.be/Noikn9u6hL8)
 
+*Click on Guitar to get the video playing!*
+
 
