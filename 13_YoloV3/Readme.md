@@ -8,11 +8,11 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-GitHub Link for Assignment A: (https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Yolo_OpenCV/yolo_object_detection.py)
+[GitHub Link](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Yolo_OpenCV/yolo_object_detection.py) for Assignment A(OpenCV YOLO)
 
-Colab Link for Assignment B: (https://colab.research.google.com/github/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb)
+[Colab Link](https://colab.research.google.com/github/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) for Assignment B(Yolo Training on Guitar)
 
-GitHub Link for Assignment B: (https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) 
+[GitHub Link](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) for Assignment B(Yolo Training on Guitar)
 
 ### **Objective**
 
@@ -23,9 +23,12 @@ Assignment A - OpenCV Yolo:
 - Run this image through the code above. 
 - Upload the link to GitHub implementation of this
 
-1) When your eBike gets discharged on a Highway!
+1) **When your eBike gets discharged on a Highway!**
 
+Github Link for Code: [Object Detector](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Yolo_OpenCV/yolo_object_detection.py)
 ![Moto_Col.png](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Images/Moto_Col.png)
+
+
 
 ## Assignment B:
 
