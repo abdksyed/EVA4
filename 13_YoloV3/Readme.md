@@ -35,7 +35,7 @@
 
 [GitHub Link](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) for Assignment B(Yolo Training on Guitar)
 
-### Annotating on OpenCV Yolo:
+## Annotating on OpenCV Yolo:
 
 1) **When your eBike gets discharged on a Highway!**
 
