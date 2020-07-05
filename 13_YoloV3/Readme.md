@@ -10,72 +10,22 @@
 
 GitHub Link for Assignment A: (https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Yolo_OpenCV/yolo_object_detection.py)
 
-Colab Link for Assignment B: ()
+Colab Link for Assignment B: (https://colab.research.google.com/github/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb)
 
-GitHub Link for Assignment AB: 
+GitHub Link for Assignment A: (https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) 
 
 ### **Objective**
 
-Assignment A:
+Assignment A - OpenCV Yolo:
 
-- Download TINY IMAGENET (Links to an external site.) dataset. 
-- Train ResNet18 on this dataset (70/30 split) for 50 Epochs. Target 50%+ Validation Accuracy. 
-- Submit Results. Of course, you are using your own package for everything.
+- Run [this](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/) code on your laptop or Colab. 
+- Take an image of yourself, holding another object which is there in COCO data set (search for COCO classes to learn). 
+- Run this image through the code above. 
+- Upload the link to GitHub implementation of this
 
+1) When your eBike gets discharged on a Highway!
 
-### **Model Statistics:**
-
-- Custom Model 
-- Batch Size: 256
-- Number of Parameters: 11,271,432
-- Epochs: 25
-
-### **Results**
-
-Achieved accuracy of
-
-**Test - 53.82%**
-
-**Train - 83.26%**
-
-**Learning Rate Finder:**
-
-![LRFinderPlot.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/LRFinderPlot.png)
-
-**Change in Learning Rate:**
-
-![ChangeLR.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/OneCycleLR.png)
-
-
-**Train and Test Accuracies and Loss:**
-
-![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/TrainTestLossAcc.png)
-
-**Train vs Test Accuracy:**
-
-![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/TestvTrain.png)
-
-**Misclassified Images:**
-
-![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/MisClassify.png)
-
-**Lets check for predicted/actual classes for some of examples from above**
-
-*For 5th row 1st Image and 5th row and 5th Image.*
-
-![CheckClasses.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/CheckClasses.png)
-
-**For List of Classes in TinyImageNet**
-
-(https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/classes.txt)
-
-### **Entire GradCAM for Mis Classified Images (w.r.t Predicted Class):**
-![Mis_GradCAM_Pred.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/Mis_GradCAM_Pred.png)
-
-### **Entire GradCAM for Mis Classified Images(w.r.t Actual Class):**
-![Mis_GradCAM_Actual.png](https://github.com/abksyed/EVA4/blob/master/12_TinyImageNet_Classification/Images/Mis_GradCAM_Actual.png)
-
-
+![Moto_Col.png](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Images/Moto_Col%20.png)
 
 ## Assignment B:
 
