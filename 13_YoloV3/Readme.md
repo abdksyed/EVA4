@@ -8,6 +8,8 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
+**Link for Assignments:**
+
 [GitHub Link](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Yolo_OpenCV/yolo_object_detection.py) for Assignment A(OpenCV YOLO)
 
 [Colab Link](https://colab.research.google.com/github/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) for Assignment B(Yolo Training on Guitar)
