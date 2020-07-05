@@ -8,8 +8,6 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-**Link for Assignments:**
-
 ### Assignment A - OpenCV Yolo:
 
 - Run [this](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/) code on your laptop or Colab. 
