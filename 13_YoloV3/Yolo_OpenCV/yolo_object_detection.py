@@ -11,7 +11,7 @@ output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 # Loading image
-img = cv2.imread("/home/syed/EVA/EVA4/13_YoloV3/Yolo_OpenCV/Image_50.jpg")
+img = cv2.imread("/home/syed/EVA/EVA4/13_YoloV3/Yolo_OpenCV/7.jpg")
 img = cv2.resize(img, None, fx=0.4, fy=0.4)
 height, width, channels = img.shape
 
