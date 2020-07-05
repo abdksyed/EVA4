@@ -55,3 +55,5 @@ Training on [Colab](https://colab.research.google.com/github/abksyed/EVA4/blob/m
 
 **Click [HERE](https://github.com/abksyed/YoloV3) to YoloV3 Entire Training / Custom Dataset Repo**
 
+*To train the model, you may need to download [weights](https://drive.google.com/drive/folders/1b4pqcLa4940wJOrU7wvfIOuBC-1EM9r0?usp=sharing) and upload in weights folder in the above repo.*
+
