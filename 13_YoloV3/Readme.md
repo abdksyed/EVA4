@@ -12,7 +12,7 @@ GitHub Link for Assignment A: (https://github.com/abksyed/EVA4/blob/master/13_Yo
 
 Colab Link for Assignment B: (https://colab.research.google.com/github/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb)
 
-GitHub Link for Assignment A: (https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) 
+GitHub Link for Assignment B: (https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) 
 
 ### **Objective**
 
@@ -25,7 +25,7 @@ Assignment A - OpenCV Yolo:
 
 1) When your eBike gets discharged on a Highway!
 
-![Moto_Col.png](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Images/Moto_Col%20.png)
+![Moto_Col.png](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Images/Moto_Col.png)
 
 ## Assignment B:
 
