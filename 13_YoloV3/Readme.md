@@ -49,6 +49,8 @@ Github Link for Code: [Object Detector](https://github.com/abksyed/EVA4/blob/mas
 
 Training on [Colab](https://colab.research.google.com/github/abksyed/EVA4/blob/master/13_YoloV3/Assignment_S13.ipynb) for Class - Guitar using Custom Dataset.
 
-**Result after Complete Training:
+**Result after Complete Training:**
 
-![Guitar by Master!](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Images/Rohan_Guitar.jpeg)
+[![Guitar by Master!](https://github.com/abksyed/EVA4/blob/master/13_YoloV3/Images/Rohan_Guitar.jpeg)](https://youtu.be/Noikn9u6hL8)
+
+
