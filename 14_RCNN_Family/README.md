@@ -1,237 +1,106 @@
-The Dataset must have 100 background, 100x2 (including flip), and you randomly place the foreground on the background 20 times, you have in total 100x200x20 images.
 
-In total you MUST have:
+# Dataset Creation Assignment:
+## Objective: 
 
-    400k fg_bg images
-    400k depth images
-    400k mask images
-    generated from:
-        100 backgrounds
-        100 foregrounds, plus their flips
-        20 random placement on each background.
-    Now add a readme file on GitHub for Project 15A:
-        Create this dataset and share a link to GDrive (publicly available to anyone) in this readme file.
-        Add your dataset statistics:
-            Kinds of images (fg, bg, fg_bg, masks, depth)
-            Total images of each kind
-            The total size of the dataset
-            Mean/STD values for your fg_bg, masks and depth images
-        Show your dataset the way I have shown above in this readme
-        Explain how you created your dataset
-            how were fg created with transparency
-            how were masks created for fgs
-            how did you overlay the fg over bg and created 20 variants
-            how did you create your depth images?
-    Add the notebook file to your repo, one which you used to create this dataset
-    Add the notebook file to your repo, one which you used to calculate statistics for this dataset
+The Data set must have 100 background, 100x2 (including flip), and you randomly place the foreground on the background 20 times, you have in total 100x200x20 images.
 
-Things to remember while creating this dataset:
+#### In total you MUST have:
+* 400k fg_bg images
+* 400k depth images
+* 400k mask images
 
-    stick to square images to make your life easy.
-    We would use these images in a network which would take an fg_bg image AND bg image, and predict your MASK and Depth image. So the input to the network is, say, 224x224xM and 224x224xN, and the output is 224x224xO and 224x224xP.
-    pick the resolution of your choice between 150 and 250 for ALL the images
+#### Which are generated from:
+* 100 backgrounds
+* 100 foregrounds, plus their flips
+* 20 random placement on each background.
 
-Solution
-Dataset Google Drive link
+#### Add your data set statistics:
 
-https://drive.google.com/open?id=10MBvlf6pMB78o-bWNe7tVlqNaIP3DtKQ
+* Kinds of images (fg, bg, fg_bg, masks, depth)
+* Total images of each kind
+* The total size of the dataset
+* Mean/STD values for your fg_bg, masks and depth images
 
-.zip, no compression algorithm was used, ZIP_STORE option was used
-Total Size
 
-enter image description here
-Dataset Creation
+#### Explain how you created your data set
+* how were fg created with transparency
+* how were masks created for fgs
+* how did you overlay the fg over bg and created 20 variants
+* how did you create your depth images?
 
-Github Link: https://github.com/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/01_DenseDepth_DatasetCreation.ipynb
+##### Add the notebook file to your repo, one which you used to create this dataset  
+##### Add the notebook file to your repo, one which you used to calculate statistics for this dataset
 
-https://github.com/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/01_02_DenseDepth_DatasetCreation.ipynb
+#### Things to remember while creating this dataset:
 
-Colab Link: https://colab.research.google.com/github/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/01_DenseDepth_DatasetCreation.ipynb
+> *stick to square images to make your life easy.*
 
-https://colab.research.google.com/github/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/01_02_DenseDepth_DatasetCreation.ipynb
-Depth Map creation
+We would use these images in a network which would take an fg_bg image AND bg image, and predict your MASK and Depth image. So the input to the network is, say, 224x224xM and 224x224xN, and the output is 224x224xO and 224x224xP.
 
-Colab link: https://colab.research.google.com/github/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/02_DepthModel_DepthMap.ipynb
-Mean and Standard Deviation
+pick the resolution of your choice between 150 and 250 for ALL the image.
+  
 
-Github Link: https://github.com/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/03_DepthModel_MeanStd.ipynb
+## 
 
-Colab Link: https://colab.research.google.com/github/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/03_DepthModel_MeanStd.ipynb
-Dataset Stats:
+### Dataset Google Drive link
+The link contains **TWO** datasets, one of *192x192* size 1.2 million images and other *96x96* size 1.2 million images.
+https://drive.google.com/drive/folders/1lChNmM_Cgtt_fCqeWpPELDV7KUqDySD2?usp=sharing
 
-    BG Images
 
-    Mean:['0.573435604572296', '0.520844697952271', '0.457784473896027']
-    Std: ['0.207058250904083', '0.208138316869736', '0.215291306376457']
+### Dataset Creation
 
-    FG_BG Images
+Github Link: 
+https://github.com/abdksyed/EVA4/blob/master/14_RCNN_Family/Creating_Dataset.ipynb
 
-    Mean: ['0.568499565124512', '0.512103974819183', '0.452332496643066']
-    Std: ['0.211068645119667', '0.211040720343590', '0.216081097722054']
+Colab Link: 
+https://colab.research.google.com/drive/1J9_xAP6BM2i-nHUEceSj-ZGVzQsz5K31?usp=sharing
 
-    FG_BG_MASK Images
+### Depth Map creation
 
-    Mean: ['0.062296919524670', '0.062296919524670', '0.062296919524670']
-    Std: ['0.227044790983200', '0.227044790983200', '0.227044790983200']
+Github Link:
+https://github.com/abdksyed/EVA4/blob/master/14_RCNN_Family/Create_Depth.ipynb
 
-    DEPTH_FG_BG
+Colab link:
+https://colab.research.google.com/drive/1_GCNTBvty3eV5cxreOInyyPXL9-gszby?usp=sharing
 
-    Mean: ['0.302973538637161', '0.302973538637161', '0.302973538637161']
-    Std: ['0.101284727454185', '0.101284727454185', '0.101284727454185']
 
-Dataset Visualization
+### Finding Statistics
 
-Github Link: https://github.com/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/04_DepthModel_DataViz.ipynb
+Github Link:
+https://github.com/abdksyed/EVA4/blob/master/14_RCNN_Family/Datasets_Statistics.ipynb
 
-Colab Link: https://colab.research.google.com/github/satyajitghana/TSAI-DeepVision-EVA4.0/blob/master/14_RCNN/04_DepthModel_DataViz.ipynb
+Colab Link:
+https://colab.research.google.com/drive/1YjU2SVP4utorndX01QI7fH_ox7adWhzv?usp=sharing
 
-Note: To view them larger, right click -> Open image in new tab
-BG Images
+### Dataset Stats:
+****************************** FINAL STATISTICS Of 192x192 Image Dataset ******************************
+**Background**        : 
+mean:[0.5810659527778625, 0.5633341670036316, 0.5403051972389221]  
+std:[0.18558748066425323, 0.19134603440761566, 0.20390349626541138]
+**FG_BG Overlay**     : 
+mean:[0.56414794921875, 0.5432481169700623, 0.5214933753013611
+std:[0.208669513463974, 0.213966503739357, 0.2230370044708252]
+**Mask of FG**        :
+ mean:[0.09639497846364975, 0.09639497846364975, 0.09639497846364975]
+ std:[0.2823259234428406, 0.2823259234428406, 0.2823259234428406]
+**Depth of FG_BG**    : 
+mean:[0.40525129437446594, 0.40525129437446594, 0.40525129437446594]
+std:[0.24363896250724792, 0.24363896250724792, 0.24363896250724792]
 
-enter image description here
-FG Images
 
-enter image description here
-FG_BG Images
-
-enter image description here
-FG_BG_MASK Images
-
-enter image description here
-Depth_FG_BG Images
-
-enter image description here
-How the dataset was created
-
-Since we need to apply the foreground images on background images and also creating a mask of the fg images, i used transparent background png images, a image crawler was run on Bing to gather people, animals, dogs, cats, bears, goats, deer, cow and human images for the fg, mall interior, interior and indoor images were searched and crawled.
-
-Now we converted the fg png images to mask by filling the transparent part with white and rest image with black using this code,
-
-img  =  cv2.imread(fg_images[0],  cv2.IMREAD_UNCHANGED)
-ret,  mask  =  cv2.threshold(im[:,  :,  3],  0,  255,  cv2.THRESH_BINARY)
-
-For the BG Images, they were resized and cropped to 200x200 using this,
-
-def  crop_center(pil_img):
-	img_width,  img_height  =  pil_img.size
-	crop_dim  =  img_width  if  img_width  <  img_height  else  img_height
-	crop_width  =  crop_height  =  crop_dim
-
-	return  pil_img.crop(((img_width  -  crop_width)  //  2,  (img_height  -  crop_height)  //  2,  (img_width  +  crop_width)  //  2,  (img_height  +  crop_height)  //  2))
-
-Once we’ve process this, we’ll have fg (100), bg (100), fg_mask (100), now we need to create the fg_bg images
-
-Now to create the fg_bg images and also the fg_bg_mask images, we will place the fg images on top of bg images at random positions, 10 times, and do this with flipped fg images, in total we will have
-fg (100) x bg (100) x flip (2) x place_random (10) = fg_bg (400,000) + fg_bg_mask (400, 000)
-
-Code to do this,
-
-idx = 0
-for bidx, bg_image in enumerate(tqdm(bgc_images)):
-
-    if (bidx < last_idx):
-        continue
-
-	Path(f 'depth_dataset_cleaned/labels/').mkdir(parents = True, exist_ok = True)
-	label_info = open(f "depth_dataset_cleaned/labels/bg_{bidx:03d}_label_info.txt", "w+")
-
-	idx = 4000 * bidx
-
-	print(f 'Processing BG {bidx}')
-	Path(f 'depth_dataset_cleaned/fg_bg/bg_{bidx:03d}').mkdir(parents = True, exist_ok = True)
-	Path(f 'depth_dataset_cleaned/fg_bg_mask/bg_{bidx:03d}').mkdir(parents = True, exist_ok = True)
-
-	for fidx, fg_image in enumerate(tqdm(fgc_images)): #do the add fg to bg 20 times
-	    for i in range(20): #do this twice, one with flip once without
-	    for should_flip in [True, False]:
-	    background = Image.open(bg_image)
-	foreground = Image.open(fg_image)
-	fg_mask = Image.open(fgc_mask_images[fidx])
-
-	if should_flip:
-	    foreground = foreground.transpose(PIL.Image.FLIP_LEFT_RIGHT)
-	fg_mask = fg_mask.transpose(PIL.Image.FLIP_LEFT_RIGHT)
-
-	b_width, b_height = background.size
-	f_width, f_height = foreground.size
-	max_y = b_height - f_height
-	max_x = b_width - f_width
-	pos_x = np.random.randint(low = 0, high = max_x, size = 1)[0]
-	pos_y = np.random.randint(low = 0, high = max_y, size = 1)[0]
-	background.paste(foreground, (pos_x, pos_y), foreground)
-
-	mask_bg = Image.new('L', background.size)
-
-	fg_mask = fg_mask.convert('L')
-	mask_bg.paste(fg_mask, (pos_x, pos_y), fg_mask)
-
-	background.save(f 'depth_dataset_cleaned/fg_bg/bg_{bidx:03d}/fg_{fidx:03d}_bg_{bidx:03d}_{idx:06d}.jpg', optimize = True, quality = 30)
-	mask_bg.save(f 'depth_dataset_cleaned/fg_bg_mask/bg_{bidx:03d}/fg_{fidx:03d}_bg_{bidx:03d}_mask_{idx:06d}.jpg', optimize = True, quality = 30)
-	label_info.write(f 'fg_bg/bg_{bidx:03d}/fg_{fidx:03d}_bg_{bidx:03d}_{idx:06d}.jpg\tfg_bg_mask/bg_{bidx:03d}/fg_{fidx:03d}_bg_{bidx:03d}_mask_{idx:06d}.jpg\t{pos_x}\t{pos_y}\n')
-
-	idx = idx + 1
-
-	label_info.close()
-	last_idx = bidx
-
-For efficiency i wrote the generated file to .zip file, why was this done though ?
-
-https://medium.com/@satyajitghana7/working-with-huge-datasets-800k-files-in-google-colab-and-google-drive-bcb175c79477
-
-Once this was done, we need to create the depth map, by running the DenseDepth Model on our fg_bg images, this was done by taking batches of 1000, since otherwise we had memory bottleneck issues, moreover i had to manually use the python’s garbage collector to make sure we free the memory after every batch
-
-def run_processing(fr = 0, to = 10):
-    print(f 'running process from {fr}(inclusive) to {to}(exclusive) BGs')
-	for bdx, b_files in enumerate(tqdm(grouped_files[fr: to])):
-
-	    print(f 'Processing for BG {fr + bdx}')
-
-	out_zip = ZipFile('depth_fg_bg.zip', mode = 'a', compression = zipfile.ZIP_STORED)
-
-	batch_size = 1000
-	batch_idx = 0
-	for batch in make_batch(b_files, batch_size):
-	    images = []
-	print(f 'Processing Batch {batch_idx}')
-	for idx, b_file in enumerate(tqdm(batch)):
-	    imgdata = fg_bg_zip.read(b_file)
-	img = Image.open(io.BytesIO(imgdata))
-	img = img.resize((640, 480))
-	x = np.clip(np.asarray(img, dtype = float) / 255, 0, 1)
-	images.append(x)
-
-	images = np.stack(images, axis = 0)
-	print(f 'Running prediction for BG {fr + bdx} Batch {batch_idx}')
-	t1 = time()
-	output = predict(model, images)
-	outputs = output.copy()
-	t2 = time()
-	print(f 'Prediction done took {(t2-t1):.5f} s')
-
-	# resize the outputs to `200x200` and extract channel 0
-	outputs = [resize(output, (200, 200))[: ,: , 0]
-	    for output in outputs
-	]
-
-	# create a temporary directory to save the png outputs of current bg directory
-	Path(f 'temp_b').mkdir(parents = True, exist_ok = True)
-
-	print('Saving to Zip File')# for every output, save the output by appending mask to it
-	for odx, output in enumerate(tqdm(outputs)):
-	    _, parent_f, f_name = b_files[batch_idx * batch_size + odx].split(os.sep)
-	f_name = f_name.split('.')[0]
-	img = Image.fromarray(output * 255)
-	img = img.convert('L')
-	img.save(f 'temp_b/temp.png')
-
-	out_zip.write('temp_b/temp.png', f 'mask_fg_bg/{parent_f}/mask_{f_name}.png')
-
-	# cleanup files
-	del output, outputs, images
-
-	# garbage collect
-	gc.collect()
-
-	batch_idx = batch_idx + 1
-
-	out_zip.close()
+****************************** FINAL STATISTICS Of 96x96 Image Dataset ******************************
+**Background**        :
+ mean:[0.5058116316795349, 0.5046520829200745, 0.475577712059021
+ std:[0.1984403431415558, 0.19773632287979126, 0.21839052438735962]
+**FG_BG Overlay**     :
+ mean:[0.49555137753486633, 0.49184027314186096, 0.4642339050769806]
+ std:[0.2157932072877884, 0.21571052074432373, 0.23315846920013428]
+**Mask of FG**        :
+ mean:[0.0985172837972641, 0.0985172837972641, 0.0985172837972641]
+ std:[0.27966567873954773, 0.27966567873954773, 0.27966567873954773]
+**Depth of FG_BG**    :
+ mean:[0.34641894698143005, 0.34641894698143005, 0.34641894698143005]
+ std:[0.22371560335159302, 0.22371560335159302, 0.22371560335159302]
+  
+
+### Dataset Visualization
