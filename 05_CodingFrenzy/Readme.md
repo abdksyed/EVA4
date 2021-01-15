@@ -1,4 +1,4 @@
-### First Iteration (**_Basic Model_**)
+## First Iteration (**_Basic Model_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter01.ipynb)
 
@@ -7,7 +7,7 @@
 - Less than 10000 parameters
 - Less than 15 epochs
 
-#### Results
+### Results
 
 - Parameters Used= **7472**
 - Train Accuracy = **100%**
@@ -19,7 +19,7 @@
 - Number of Parameters used are nearly 7500, so more 2500 parameters can be used if required.
 - Need to reduce to Overfitting
 
-### Second Iteration (**_Model + BatchNorm_**)
+## Second Iteration (**_Model + BatchNorm_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter02.ipynb)
 
@@ -35,7 +35,7 @@
 - Improve the Model
 - Add Batch Normalization to increase model accuracy.
 
-**Results**
+### Results
 
 - Parameters Used= **7408**
 - Train Accuracy = **100%**
@@ -48,7 +48,7 @@
 - Number of Parameters used are 7624, so more 2400 parameters can be used if required.
 - Need to reduce to Overfitting
 
-### Third Iteration (**_Model + BatchNorm + DropOut_**)
+## Third Iteration (**_Model + BatchNorm + DropOut_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter03.ipynb)
 
@@ -64,11 +64,11 @@
 - Reduce Over-fitting
 - Add Dropout to reduce overfitting.
 
-**Results**
+### Results
 
-- Parameters Used= 7408
-- Train Accuracy = 94.54%
-- Test Accuracy = 99.22%
+- Parameters Used= **7408**
+- Train Accuracy = **94.54%**
+- Test Accuracy = **99.22%**
 
 **Analysis**
 
