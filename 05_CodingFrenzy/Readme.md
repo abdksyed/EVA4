@@ -1,6 +1,6 @@
 **First Iteration (**_Basic Model_**)**
 
-[Colab Link](https://github.com/abksyed/EVA4/blob/master/S5/EVA4_S5_Assignment_iter01.ipynb)
+[Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter01.ipynb)
 
 **Target**
 
@@ -21,7 +21,7 @@
 
 **Second Iteration (**_Model + BatchNorm_**)**
 
-[Colab Link](https://github.com/abksyed/EVA4/blob/master/S5/EVA4_S5_Assignment_iter02.ipynb)
+[Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter02.ipynb)
 
 **Target achieved in Last Iteration**
 
@@ -50,7 +50,7 @@
 
 **Third Iteration (**_Model + BatchNorm + DropOut_**)**
 
-[Colab Link](https://github.com/abksyed/EVA4/blob/master/S5/EVA4_S5_Assignment_iter03.ipynb)
+[Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter03.ipynb)
 
 **Target achieved in Last Iteration**
 
@@ -79,7 +79,7 @@
 
 **Fourth Iteration (**_Model + BatchNorm + RandomRotation_**)**
 
-[Colab Link](https://github.com/abksyed/EVA4/blob/master/S5/EVA4_S5_Assignment_iter04.ipynb)
+[Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter04.ipynb)
 
 **Target achieved in Last Iteration**
 
@@ -108,7 +108,7 @@
 
 **Fifth Iteration (**_Model + BatchNorm + RandomRotation + StepLR_**)**
 
-[Colab Link](https://github.com/abksyed/EVA4/blob/master/S5/EVA4_S5_Assignment_iter05.ipynb)
+[Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter05.ipynb)
 
 **Target achieved in Last Iteration**
 
@@ -144,7 +144,7 @@
 
 **Sixth Iteration (**_Model + BatchNorm + DropOut + RandomRotation + StepLR_**)**
 
-[Colab Link](https://github.com/abksyed/EVA4/blob/master/S5/EVA4_S5_Assignment_iter06.ipynb)
+[Colab Link](https://github.com/abdksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter06.ipynb)
 
 **Target achieved in Last Iteration**
 
