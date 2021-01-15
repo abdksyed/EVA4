@@ -1,4 +1,4 @@
-**First Iteration (**_Basic Model_**)**
+### First Iteration (**_Basic Model_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter01.ipynb)
 
@@ -7,11 +7,11 @@
 - Less than 10000 parameters
 - Less than 15 epochs
 
-**Results**
+#### Results
 
-- Parameters Used= 7472
-- Train Accuracy = 100%
-- Test Accuracy = 99.1%
+- Parameters Used= **7472**
+- Train Accuracy = **100%**
+- Test Accuracy = **99.1%**
 
 **Analysis**
 
@@ -19,7 +19,7 @@
 - Number of Parameters used are nearly 7500, so more 2500 parameters can be used if required.
 - Need to reduce to Overfitting
 
-**Second Iteration (**_Model + BatchNorm_**)**
+### Second Iteration (**_Model + BatchNorm_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter02.ipynb)
 
@@ -37,9 +37,9 @@
 
 **Results**
 
-- Parameters Used= 7408
-- Train Accuracy = 100%
-- Test Accuracy = 99.27%
+- Parameters Used= **7408**
+- Train Accuracy = **100%**
+- Test Accuracy = **99.27%**
 
 **Analysis**
 
@@ -48,7 +48,7 @@
 - Number of Parameters used are 7624, so more 2400 parameters can be used if required.
 - Need to reduce to Overfitting
 
-**Third Iteration (**_Model + BatchNorm + DropOut_**)**
+### Third Iteration (**_Model + BatchNorm + DropOut_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter03.ipynb)
 
@@ -77,7 +77,7 @@
 - Number of Parameters used are 7408, so more 2500 parameters can be used if required.
 - Need to improve accuracy.
 
-**Fourth Iteration (**_Model + BatchNorm + RandomRotation_**)**
+### Fourth Iteration (**_Model + BatchNorm + RandomRotation_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter04.ipynb)
 
@@ -106,7 +106,7 @@
 - BatchNorm and DropOut doesn&#39;t work well hand in hand. ([https://arxiv.org/abs/1801.05134](https://arxiv.org/abs/1801.05134))
 - Test accuracy reaches 99.4 but isn&#39;t consistent.
 
-**Fifth Iteration (**_Model + BatchNorm + RandomRotation + StepLR_**)**
+### Fifth Iteration (**_Model + BatchNorm + RandomRotation + StepLR_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter05.ipynb)
 
@@ -142,7 +142,7 @@
 - Test accuracy 99.60 (epoch 14)
 - Test accuracy 99.58 (epoch 15)
 
-**Sixth Iteration (**_Model + BatchNorm + DropOut + RandomRotation + StepLR_**)**
+### Sixth Iteration (**_Model + BatchNorm + DropOut + RandomRotation + StepLR_**)
 
 [Colab Link](https://github.com/abdksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter06.ipynb)
 
