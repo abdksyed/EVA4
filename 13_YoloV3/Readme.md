@@ -1,13 +1,3 @@
-**Members:**
-
-[Jahnavi Ramagiri](https://canvas.instructure.com/courses/1804302/users/25685093)
-
-[Sachin Sharma](https://canvas.instructure.com/courses/1804302/users/23724529)
-
-[Madalasa Venkataraman](https://canvas.instructure.com/courses/1804302/users/25685106)
-
-[Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
-
 ### Assignment A - OpenCV Yolo:
 
 - Run [this](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/) code on your laptop or Colab. 
