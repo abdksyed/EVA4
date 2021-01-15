@@ -77,7 +77,7 @@
 - Number of Parameters used are 7408, so more 2500 parameters can be used if required.
 - Need to improve accuracy.
 
-### Fourth Iteration (**_Model + BatchNorm + RandomRotation_**)
+## Fourth Iteration (**_Model + BatchNorm + RandomRotation_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter04.ipynb)
 
@@ -94,11 +94,11 @@
 - Add RandomRotation of (-12, 12) degrees
 - Add extra Layer after GAP
 
-**Results**
+### Results
 
-- Parameters Used= 8464
-- Train Accuracy = 99.18%
-- Test Accuracy = 99.41%
+- Parameters Used= **8464**
+- Train Accuracy = **99.18%**
+- Test Accuracy = **99.41%**
 
 **Analysis**
 
@@ -106,7 +106,7 @@
 - BatchNorm and DropOut doesn&#39;t work well hand in hand. ([https://arxiv.org/abs/1801.05134](https://arxiv.org/abs/1801.05134))
 - Test accuracy reaches 99.4 but isn&#39;t consistent.
 
-### Fifth Iteration (**_Model + BatchNorm + RandomRotation + StepLR_**)
+## Fifth Iteration (**_Model + BatchNorm + RandomRotation + StepLR_**)
 
 [Colab Link](https://github.com/abksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter05.ipynb)
 
@@ -123,11 +123,11 @@
 - Achieve 99.4% accuracy for 3-5 epochs consistently.
 - Use ScheduledLR
 
-**Results**
+### Results
 
-- Parameters Used= 8464
-- Train Accuracy = 99.37%
-- Test Accuracy = 99.60%
+- Parameters Used= **8464**
+- Train Accuracy = **99.37%**
+- Test Accuracy = **99.60%**
 
 **Analysis**
 
@@ -142,7 +142,7 @@
 - Test accuracy 99.60 (epoch 14)
 - Test accuracy 99.58 (epoch 15)
 
-### Sixth Iteration (**_Model + BatchNorm + DropOut + RandomRotation + StepLR_**)
+## Sixth Iteration (**_Model + BatchNorm + DropOut + RandomRotation + StepLR_**)
 
 [Colab Link](https://github.com/abdksyed/EVA4/blob/master/05_CodingFrenzy/EVA4_S5_Assignment_iter06.ipynb)
 
@@ -158,11 +158,11 @@
 - Use DropOut(3%), to increase challenge for Training
 - Create gap between training and testing accuracy.
 
-**Results**
+### Results
 
-- Parameters Used= 8464
-- Train Accuracy = 98.83%
-- Test Accuracy = 99.55%
+- Parameters Used= **8464**
+- Train Accuracy = **98.83%**
+- Test Accuracy = **99.55%**
 
 **Analysis**
 
