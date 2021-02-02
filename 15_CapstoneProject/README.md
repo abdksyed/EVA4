@@ -15,7 +15,7 @@ In Depth Estimation, the machine has to extract the depth information of the for
 ### Below are the Results for each
 
 #### UNet - 7M Parameters.
-![FinalResult_7M]()
+![FinalResult_7M](https://github.com/abdksyed/EVA4/blob/master/15_CapstoneProject/results/FinalResults_7M.png)
 
 #### UNet - 31M Parameters.
-![FinalResult_31M]()
+![FinalResult_31M](https://github.com/abdksyed/EVA4/blob/master/15_CapstoneProject/results/FinalResults_31M.png)
